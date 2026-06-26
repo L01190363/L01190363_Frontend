@@ -1,0 +1,22 @@
+{
+  // Configuración del Codespace para el frontend HTML + JS.
+  // Es el más sencillo del curso: solo necesita Python para servir
+  // los archivos estáticos con "python -m http.server".
+  "name": "Frontend HTML+JS",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+
+  // Reenvía el puerto del servidor estático.
+  "forwardPorts": [8080],
+  "portsAttributes": {
+    "8080": { "label": "Frontend estático" }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "ritwickdey.LiveServer"
+      ]
+    }
+  }
+}
